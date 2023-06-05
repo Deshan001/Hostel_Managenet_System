@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="DashBoardContext1" cacheShape="false" focusTraversable="true" prefHeight="816.0" prefWidth="1513.0" scaleShape="false" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostelmanagementsystem.controller.DashBoardFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="118.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="1541.0" />
+      <JFXButton fx:id="btnHome" layoutX="155.0" layoutY="43.0" onAction="#btnHomeOnAction" prefHeight="43.0" prefWidth="133.0" text="HOME" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnManageStudent" layoutX="304.0" layoutY="33.0" onAction="#btnManageStudentOnAction" prefHeight="60.0" prefWidth="179.0" text="MANAGE STUDENT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnReserveDetails" layoutX="927.0" layoutY="32.0" onAction="#btnReserveDetailsOnAction" prefHeight="66.0" prefWidth="214.0" text="RESERVATION DETAILS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnManageRooms" layoutX="512.0" layoutY="33.0" onAction="#btnManageRoomsOnAction" prefHeight="60.0" prefWidth="196.0" text="MANAGE ROOMS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnRemainingKey" layoutX="1180.0" layoutY="33.0" onAction="#btnRemainingKeyOnAction" prefHeight="60.0" prefWidth="179.0" text="REMAINING KEY" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="85.0" fitWidth="117.0" layoutX="31.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/Screenshot%20(39).png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="193.0" layoutY="76.0" prefHeight="4.0" prefWidth="57.0" />
+      <Separator layoutX="1203.0" layoutY="71.0" prefHeight="4.0" prefWidth="133.0" />
+      <Separator layoutX="945.0" layoutY="75.0" prefHeight="4.0" prefWidth="179.0" />
+      <Separator layoutX="544.0" layoutY="74.0" prefHeight="4.0" prefWidth="133.0" />
+      <Separator layoutX="318.0" layoutY="74.0" prefHeight="4.0" prefWidth="152.0" />
+      <JFXButton fx:id="btnLogOut" alignment="BOTTOM_CENTER" layoutX="1372.0" layoutY="26.0" onAction="#btnLogOutOnAction" prefHeight="75.0" prefWidth="143.0" style="-fx-background-color: white;" text="LogOut">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="60.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/log-out-symbol.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <AnchorPane fx:id="DashBoardContext2" layoutX="2.0" layoutY="117.0" prefHeight="726.0" prefWidth="1513.0">
+         <children>
+            <ImageView fitHeight="726.0" fitWidth="1541.0" layoutX="-2.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assert/new.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="50.0" layoutY="64.0" prefHeight="52.0" prefWidth="641.0" text="A BEST PLACE TO LIVE...">
+               <font>
+                  <Font name="Book Antiqua Bold" size="44.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.30097087378640774" startX="0.30097087378640774" startY="0.7475728155339806">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="50.0" layoutY="116.0" prefHeight="60.0" prefWidth="344.0" text="Enjoy With Your Friends or ," textFill="#faff00">
+               <font>
+                  <Font name="Agency FB Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="160.0" prefHeight="60.0" prefWidth="344.0" text="With Your Self." textFill="#edf50f">
+               <font>
+                  <Font name="Agency FB Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnReserveRooms" layoutX="695.0" layoutY="30.0" onAction="#btnReserveRoomsOnAction" prefHeight="66.0" prefWidth="214.0" text="RESERVE ROOMS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="731.0" layoutY="73.0" prefHeight="4.0" prefWidth="143.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1903.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostelmanagementsystem.controller.RemainingKeyFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="750.0" layoutX="-10.0" stroke="BLACK" strokeType="INSIDE" width="1914.0" />
+      <Label layoutX="54.0" layoutY="28.0" prefHeight="52.0" prefWidth="296.0" text="Remaining Key-Money">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#7c05ae" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TableView fx:id="tblKeyMoney" layoutX="118.0" layoutY="123.0" onMouseClicked="#tblRemainingKeyMoneyClickOnAction" prefHeight="191.0" prefWidth="1085.0">
+        <columns>
+          <TableColumn fx:id="colRoomId" prefWidth="175.33334350585938" text="Room" />
+          <TableColumn fx:id="colRType" prefWidth="227.00006103515625" text="Room Type" />
+            <TableColumn fx:id="colStudent" prefWidth="200.33331298828125" text="Student" />
+            <TableColumn fx:id="colFullKeyMoney" prefWidth="270.666748046875" text="Full Key-Money" />
+            <TableColumn fx:id="colPaidAmount" prefWidth="206.0001220703125" text="Paid Amount" />
+        </columns>
+      </TableView>
+      <Label layoutX="158.0" layoutY="326.0" prefHeight="42.0" prefWidth="269.0" text="Student Details">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="751.0" layoutY="333.0" prefHeight="42.0" prefWidth="269.0" text="Reserved Details">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="132.0" layoutY="397.0" prefHeight="52.0" prefWidth="105.0" text="Student ID :" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="132.0" layoutY="464.0" prefHeight="52.0" prefWidth="135.0" text="Student Name :" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="132.0" layoutY="528.0" prefHeight="52.0" prefWidth="87.0" text="Address :" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="132.0" layoutY="593.0" prefHeight="52.0" prefWidth="124.0" text="Contact No :" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtStudentId" editable="false" layoutX="293.0" layoutY="397.0" opacity="0.46" prefHeight="35.0" prefWidth="328.0" />
+      <TextField fx:id="txtSName" editable="false" layoutX="293.0" layoutY="472.0" opacity="0.46" prefHeight="35.0" prefWidth="328.0" />
+      <TextField fx:id="txtAddress" editable="false" layoutX="292.0" layoutY="537.0" opacity="0.46" prefHeight="35.0" prefWidth="328.0" />
+      <TextField fx:id="txtContact" editable="false" layoutX="292.0" layoutY="608.0" opacity="0.46" prefHeight="35.0" prefWidth="328.0" />
+      <Label layoutX="709.0" layoutY="476.0" prefHeight="52.0" prefWidth="105.0" text="End Date :" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="709.0" layoutY="409.0" prefHeight="52.0" prefWidth="135.0" text="Start Date :" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="709.0" layoutY="553.0" prefHeight="52.0" prefWidth="124.0" text="Key-Money :" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEndDate" editable="false" layoutX="868.0" layoutY="476.0" opacity="0.33" prefHeight="35.0" prefWidth="365.0" />
+      <TextField fx:id="txtStartDate" editable="false" layoutX="868.0" layoutY="409.0" opacity="0.33" prefHeight="35.0" prefWidth="365.0" />
+      <TextField fx:id="txtKeyMoney" editable="false" layoutX="868.0" layoutY="553.0" opacity="0.33" prefHeight="35.0" prefWidth="200.0" />
+      <TextField fx:id="txtPaying" layoutX="1092.0" layoutY="549.0" opacity="0.54" prefHeight="35.0" prefWidth="135.0" promptText="Paying Amount" />
+      <JFXButton layoutX="1305.0" layoutY="605.0" onAction="#btnDoneOnAction" prefHeight="23.0" prefWidth="124.0" style="-fx-background-color: #46c541;" text="Done">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

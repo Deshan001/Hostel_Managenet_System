@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="463.0" prefWidth="1903.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostelmanagementsystem.controller.ManageStudentFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="785.0" stroke="BLACK" strokeType="INSIDE" width="1903.0" />
+      <AnchorPane fx:id="addStudentPane" layoutX="82.0" layoutY="79.0" prefHeight="318.0" prefWidth="722.0" />
+      <TableView fx:id="tblStudent" layoutX="113.0" layoutY="507.0" onMouseClicked="#tblStudentRefreshOnAction" prefHeight="159.0" prefWidth="642.0">
+        <columns>
+          <TableColumn fx:id="colStudentId" prefWidth="87.33328247070312" text="Student_Id" />
+          <TableColumn fx:id="colName" prefWidth="87.3333740234375" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="111.0" text="Address" />
+            <TableColumn fx:id="colCity" prefWidth="117.6666259765625" text="City" />
+            <TableColumn fx:id="colContact" prefWidth="127.0" text="Contact No" />
+            <TableColumn fx:id="colGmail" minWidth="0.0" prefWidth="107.0" text="Gmail" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="804.0" layoutY="17.0" prefHeight="768.0" prefWidth="596.0">
+         <children>
+            <Label layoutX="143.0" prefHeight="53.0" prefWidth="247.0" text="UPDATE OR DELETE STUDENT ;" textFill="WHITE">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+            <Separator layoutX="153.0" layoutY="40.0" opacity="0.46" prefHeight="0.0" prefWidth="211.0" />
+            <JFXTextField fx:id="txtStudentId" layoutX="58.0" layoutY="62.0" prefHeight="28.0" prefWidth="401.0" promptText="Student Id ;" unFocusColor="WHITE" />
+            <JFXTextField fx:id="txtName" layoutX="57.0" layoutY="131.0" prefHeight="28.0" prefWidth="419.0" promptText="Name :" unFocusColor="WHITE" />
+            <JFXTextField fx:id="txtAddress" layoutX="57.0" layoutY="196.0" prefHeight="28.0" prefWidth="419.0" promptText="Address :" unFocusColor="WHITE" />
+            <JFXTextField fx:id="txtCity" layoutX="57.0" layoutY="267.0" prefHeight="28.0" prefWidth="419.0" promptText="City :" unFocusColor="WHITE" />
+            <JFXTextField fx:id="txtContactNo" layoutX="57.0" layoutY="331.0" prefHeight="28.0" prefWidth="419.0" promptText="Contact No:" unFocusColor="WHITE" />
+            <JFXTextField fx:id="txtGmail" layoutX="57.0" layoutY="394.0" prefHeight="28.0" prefWidth="419.0" promptText="Gmail:" unFocusColor="WHITE" />
+            <JFXButton fx:id="btnSearch" layoutX="101.0" layoutY="515.0" onAction="#btnSearchOnAction" prefHeight="25.0" prefWidth="132.0" style="-fx-background-color: pink;" text="Search" textFill="#100101">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnUpdate1" layoutX="313.0" layoutY="515.0" onAction="#btnUpdateOnAction" prefHeight="25.0" prefWidth="132.0" style="-fx-background-color: Blue;" text="Update" textFill="#100101">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnClear" layoutX="313.0" layoutY="584.0" onAction="#btnClearOnAction" prefHeight="25.0" prefWidth="132.0" style="-fx-background-color: yellow;" text="Clear" textFill="#140101">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnDelete1" layoutX="101.0" layoutY="584.0" onAction="#btnDeleteOnAction" prefHeight="25.0" prefWidth="132.0" style="-fx-background-color: Red;" text="Delete" textFill="#140101">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Label layoutX="67.0" layoutY="14.0" prefHeight="53.0" prefWidth="288.0" text="Manage Student">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#7506a1" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

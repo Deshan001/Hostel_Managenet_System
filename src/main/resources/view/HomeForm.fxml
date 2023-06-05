@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="822.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostelmanagementsystem.controller.HomeFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="828.0" layoutX="-6.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="1926.0" />
+      <Label layoutX="48.0" layoutY="32.0" prefHeight="80.0" prefWidth="526.0" text="Welcome To YOU'R HOSTEL ,">
+         <font>
+            <Font name="Algerian" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#cc09da" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label alignment="CENTER" layoutX="240.0" layoutY="302.0" prefHeight="128.0" prefWidth="173.0" style="-fx-background-color: white;" text="AC/FOOD">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font></Label>
+      <Label fx:id="lbl1" layoutX="248.0" layoutY="302.0" prefHeight="24.0" prefWidth="38.0" style="-fx-background-color: blue;" />
+      <Label alignment="CENTER" layoutX="612.0" layoutY="302.0" prefHeight="128.0" prefWidth="173.0" style="-fx-background-color: white;" text="AC">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl2" layoutX="620.0" layoutY="302.0" prefHeight="24.0" prefWidth="38.0" style="-fx-background-color: blue;" />
+      <Label alignment="CENTER" layoutX="235.0" layoutY="517.0" prefHeight="128.0" prefWidth="173.0" style="-fx-background-color: white;" text="NON AC/FOOD">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl3" layoutX="243.0" layoutY="516.0" prefHeight="24.0" prefWidth="38.0" style="-fx-background-color: blue;" />
+      <Label alignment="CENTER" layoutX="611.0" layoutY="516.0" prefHeight="128.0" prefWidth="173.0" style="-fx-background-color: white;" text="NON AC">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl4" layoutX="619.0" layoutY="516.0" prefHeight="24.0" prefWidth="38.0" style="-fx-background-color: blue;" />
+      <Label layoutX="45.0" layoutY="105.0" prefHeight="53.0" prefWidth="381.0" text="Affordable , Confortable and  Spacious">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#d12424fe" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="45.0" layoutY="145.0" prefHeight="46.0" prefWidth="173.0" text="Hostel Rooms">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#d12424fe" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <LineChart fx:id="lineChart" layoutX="1029.0" layoutY="124.0" prefHeight="489.0" prefWidth="667.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>
